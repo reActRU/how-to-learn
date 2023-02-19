@@ -150,7 +150,7 @@
 
 .table__cell {
   width: 250px;
-  padding-top: 60px
+  padding-top: 60px;
 }
 
 .table__heading {
@@ -245,14 +245,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto 90px;
   padding-inline-start: 0;
-  list-style-type: none;
 }
 
 .table__cell_theme_dark {
   width: 200px;
-  padding-top: 80px
+  padding-top: 80px;
 }
 
 .table__heading_theme_dark {
