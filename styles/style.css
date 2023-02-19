@@ -1,31 +1,341 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+ /*Блок Цифры и факты*/
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: #f2f2f2;
+  z-index: -3;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo__place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 228px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  width: 730px;
+  position: absolute;
+  left: 64px;
+  align-self: center;
+}
+
+.header__subtitle {
+  margin: 0;
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: -2;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.header__main-illustration {
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/*Блок Главные проблемы в обучении*/
+
+.description {
+  padding-top: 100px;
+  position: relative;
+}
+
+.two-columns {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.two-columns_brief {
+  margin: 0;
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  list-style-type: none;
+}
+
+.two-columns_main-text {
+  width: 80%;
+  min-width: 784px;
+  list-style-type: none;
+}
+
+.two-columns_paragraph {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.two-columns_span-accent {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*Блок Цифры и факты*/
+
+.section-title {
+  margin: 100px auto 20px;
+  text-align: center;
+  line-height: 1.15;
+  width: 60%;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.table {
+  margin: 0 auto 100px;
+  width: 1100px;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.table__cell {
+  width: 250px;
+  padding-top: 60px
+}
+
+.table__heading {
+  margin: 0;
+  padding-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  margin: 0 0 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*Блок Метод Феймана*/
+
+.feynman {
+  position: relative;
+  min-height: 890px;
+  background-color: #f2f2f2;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 0px auto 70px;
+  padding-top: 100px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+/*Блок Кауфмана*/
+
+.kaufman {
+  overflow: hidden;
+  background-color: #1f1f1f;
+  color: white;
+  z-index: -1;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: 877px 877px;
+  background-repeat: no-repeat;
+  background-position: top 0 right -210px;
+}
+
+.section-title__theme_dark {
+  margin: 90px auto 20px;
+  text-align: center;
+  line-height: 1.15;
+  width: 60%;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle__theme_dark {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.table__theme_dark {
+  margin: 0 auto 90px;
+  width: 1100px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 90px;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
 .table__cell_theme_dark {
   width: 200px;
+  padding-top: 80px
+}
+
+.table__heading_theme_dark {
+  margin: 0;
+  padding-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text_theme_dark {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*Подвал*/
+
+.footer {
+  padding: 60px 0 40px;
+  min-height: 350px;
+  background-color: #1f1f1f;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+}
+
+.footer__columns {
+  position: relative;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.logo__place_footer {
+  height: 32px;
+  width: 228px;
+}
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__column_content_info {
+  text-decoration: none;
+}
+
+.footer__column_content_social {
+  text-decoration: none;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-links {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style-type: none;
+  color: #f2f2f2
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: #f2f2f2;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
 }

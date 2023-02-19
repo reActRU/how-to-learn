@@ -96,3 +96,9 @@ ___________________________
 Концепция
 Наставники
 
+display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 90px;
+  padding-inline-start: 0;
+  list-style-type: none;
