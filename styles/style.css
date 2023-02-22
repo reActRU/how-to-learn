@@ -208,9 +208,9 @@
 /*Блок Кауфмана*/
 
 .kaufman {
+  position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
-  position: relative;
   overflow: hidden;
   background-color: #1f1f1f;
   color: white;
@@ -219,17 +219,16 @@
 
 .kaufman__triangle {
   position: absolute;
-  width: 877px;
+  background-size: cover;
+  background-image: url(../images/kaufman-triangle.svg);
+  top: 0;
   right: -210px;
-  z-index:-1;
+  width: 887px;
+  height: 877px;
+  z-index:-1 ;
+ 
 }
-
-
-.table_theme_dark {
-  margin: 0 auto 90px;
-}
-
-.table_cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   padding-top: 80px;
 }
@@ -252,7 +251,7 @@
   margin: auto;
 }
 
-.footer_column_content_copyright {
+.footer__column_content_copyright {
   display : flex;
   flex-direction: column;
   justify-content: space-between;
