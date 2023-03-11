@@ -5,6 +5,7 @@
   color: #2f80ed;
   transition: opacity .6s linear;
   padding-left: 48px;
+  text-decoration: none;
 }
 .khan__buy-link:hover {
   opacity: 0.4;
