@@ -4,5 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  gap: 60px 100px;
+  gap: 100px;
+  padding: 0;
 }
